@@ -1,0 +1,121 @@
+body{
+	font-size:16px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+
+}
+*, *::before, *::after{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+img{
+	max-width: 100%;
+}
+body{
+	display: grid;
+	grid-template-areas: 
+	"fejlec"
+	"tartalom"
+	"lablec"
+	;
+	grid-template-rows: max-content 1fr max-content;
+	min-height: 100vh;
+	color: saddlebrown;
+}
+header{
+	
+	background-color: tan;
+	grid-area: fejlec; 
+	color: saddlebrown;
+	
+
+}
+.fejlectablazat{
+	text-decoration: none;
+	
+}
+header .cim{
+	margin: 2rem;
+}
+header .menu{
+	display: inline-block;
+	user-select: none;
+	transition: .3s;
+}
+header a{
+	display: inline-block;
+	user-select: none;
+	border: 2px solid;
+	padding: 1rem;
+	border-color: saddlebrown;
+	transition: .3s;
+	background-color: khaki;
+	text-decoration: none;
+	color: saddlebrown;
+}
+
+header a:hover{
+	cursor:pointer;
+	background-color: palegoldenrod;
+	text-decoration: underline;
+}
+main{
+	background-color: wheat;
+	grid-area: tartalom;
+}
+main.tablazat{
+	padding:  1rem 1rem;
+	float: right;
+	
+}
+.keress{
+	margin: 3rem;
+}
+.bekezdes{
+	padding-bottom: 2rem;
+}
+.kep1{
+	max-height: 20rem;
+	padding: 0rem 0rem 0rem 1rem;
+	margin: 0rem 0rem .5rem .5rem;
+	float: right;
+	display: inline-block;
+}
+.szoveg{
+	display: block;
+	grid-row: 2/3;
+	grid-column: 2/3;
+	margin: auto;
+	padding: 2rem;
+}
+.kep2{
+	display: inline-block;
+	margin: auto;
+	padding: 1rem;
+	margin: 0rem 0rem .5rem .5rem;
+	max-height: 20rem;
+}
+.kep3{
+	display: inline-block;
+	margin: auto;
+	padding: 1rem;
+	max-height: 10rem;
+	float: right;
+}
+.kep4{
+	max-height: 20rem;
+	padding: 0rem 1rem 1rem 1rem;
+	margin: .5rem .5rem .5rem .5rem;
+	float: left;
+	display: inline-block;
+}
+.munkak1{
+	padding: 3rem;
+	margin: 1rem;
+}
+footer{
+	background-color: wheat;
+	grid-area: lablec;
+	padding: 1rem;
+}
